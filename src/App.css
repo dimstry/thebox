@@ -1,38 +1,385 @@
-.App {
-  text-align: center;
+/* navbar section */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+}
+.nav-header {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-left {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8em;
+}
+.nav-logo {
+  width: 38px;
+  height: 47.5px;
+  left: 112px;
+  top: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-brand {
+  width: 111px;
+  height: 35px;
+
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+
+  /* Primary */
+
+  color: #2947a9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-right {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 50px;
+
+  width: 577px;
+  height: 21px;
+}
+.nav-right li {
+  list-style-type: none;
+}
+.nav-right a {
+  /* Primary */
+  text-decoration: none;
+}
+
+.nav-link {
+  width: 52px;
+  height: 21px;
+
+  /* Body/default */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* Neutral/900 */
+
+  color: #14171f;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.nav-link-contact {
+  width: 98px;
+  height: 21px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* Secondary */
+
+  color: #f9995d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+/* Banner section */
+.hero {
+  width: 100%;
+  height: 646px;
+  background: url(assets/Hero.svg) right bottom no-repeat;
+  overflow: hidden;
+}
+
+.hero-title {
+  position: absolute;
+  width: 556px;
+  height: 168px;
+  left: calc(50% - 556px / 2 - 330px);
+  top: 239px;
+
+  /* Heading/1 */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 84px;
+
+  /* Neutral/800 */
+
+  color: #292e3d;
+}
+
+.feature {
+  position: absolute;
+  width: 416px;
+  height: 190px;
+  right: 0;
+  top: 535px;
+  background-color: #14171f;
+}
+
+.feature-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: -0;
+
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  right: 0px;
+  bottom: 40px;
+
+  background: #3559c7;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.feature-tittle {
+  width: 163px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  /* Neutral/White */
+
+  color: #ffffff;
+  z-index: 1;
+}
+
+.feature-description {
+  width: 312px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  /* Neutral/White */
+
+  color: #ffffff;
+}
+
+.back-button {
+  /* Back Button */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 4px 20px;
+  gap: 10px;
+
+  position: absolute;
+  width: 50%;
+  height: 40px;
+  bottom: 0;
+  /* Neutral/800 */
+
+  background: #292e3d;
 }
 
-.App-link {
-  color: #61dafb;
+.back-text {
+  width: 43px;
+  height: 21px;
+
+  /* Body/default */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  /* Neutral/White */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back-arrow {
+  transform: rotate(-180deg);
+}
+
+.next-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px;
+  gap: 10px;
+
+  position: absolute;
+  width: 50%;
+  height: 40px;
+  right: 0;
+  bottom: 0;
+
+  /* Neutral/800 */
+
+  background: #292e3d;
+}
+.next-text {
+  width: 41px;
+  height: 21px;
+
+  /* Body/default */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  /* Neutral/White */
+
+  color: #ffffff;
+}
+
+/* Reasons section */
+.reasons {
+  width: 100%;
+  height: 433px;
+  background-color: #f9f9f9;
+}
+
+.reasons-title {
+  height: 42px;
+  left: 584px;
+  right: 585px;
+  top: 60px;
+
+  /* Heading/4 */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  /* Neutral/800 */
+
+  color: #292e3d;
+}
+
+.reasons-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reasons-card {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 20px 40px;
+  width: 292px;
+  height: 197px;
+
+  background: #ffffff;
+  /* Neutral/100 */
+
+  border: 1.4px solid #e0e3eb;
+  border-radius: 4px;
+}
+
+.card-img {
+  width: 40px;
+  height: 40px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.card-title {
+  width: 135px;
+  height: 23px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  /* Neutral/700 */
+
+  color: #3d445c;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.card-text {
+  width: 254px;
+  height: 38px;
+
+  /* Caption */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Neutral/400 */
+
+  color: #858ead;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
