@@ -1,0 +1,106 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+}
+.nav_header {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav_left {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8em;
+}
+.nav_logo {
+  width: 38px;
+  height: 47.5px;
+  left: 112px;
+  top: 16px;
+}
+
+.nav_brand {
+  width: 111px;
+  height: 35px;
+
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+
+  /* Primary */
+
+  color: #2947a9;
+}
+
+.nav_right {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 50px;
+
+  width: 577px;
+  height: 21px;
+}
+.nav_right li {
+  list-style-type: none;
+}
+.nav_right a {
+  /* Primary */
+  text-decoration: none;
+}
+
+.nav_link {
+  width: 52px;
+  height: 21px;
+
+  /* Body/default */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* Neutral/900 */
+
+  color: #14171f;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.nav_link_contact {
+  width: 98px;
+  height: 21px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  /* Secondary */
+
+  color: #f9995d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}

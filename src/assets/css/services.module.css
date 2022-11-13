@@ -1,0 +1,88 @@
+.services {
+  width: 100%;
+  height: 608px;
+  background: #f6f8f7;
+}
+
+.services_title {
+  height: 42px;
+
+  /* Heading/4 */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+
+  /* Neutral/800 */
+
+  color: #292e3d;
+}
+
+.services_container {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 250px 250px 250px;
+
+  margin: 0 auto;
+}
+.services_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 271px;
+  height: 181px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+  border-radius: 4px;
+  color: #2947a9;
+  gap: 0.8em;
+}
+/* select nth child 2,4,dan 6 */
+.services_card:nth-child(2) {
+  background-color: #2947a9;
+  color: #ffffff;
+}
+.services_card:nth-child(4) {
+  background-color: #2947a9;
+  color: #ffffff;
+}
+.services_card:nth-child(6) {
+  background-color: #2947a9;
+  color: #ffffff;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background: #e0e3eb;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.services_card_title {
+  height: 23px;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  /* Primary */
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}

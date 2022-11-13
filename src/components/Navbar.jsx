@@ -1,38 +1,39 @@
 import React from "react";
-import navLogo from "../assets/logo.svg";
+import navLogo from "../assets/img/logo.svg";
+import styles from "../assets/css/navbar.module.css";
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="nav-header">
-        <div className="nav-left">
-          <img src={navLogo} alt="logo" className="nav-logo" />
+    <nav className={styles.navbar}>
+      <div className={styles.nav_header}>
+        <div className={styles.nav_left}>
+          <img src={navLogo} alt="logo" className={styles.nav_logo} />
           <h1 className="nav-brand">TheBox</h1>
         </div>
         {/* bagian kanan dengan link */}
-        <ul className="nav-right">
+        <ul className={styles.nav_right}>
           <li>
-            <a href="/" className="nav-link">
+            <a href="/" className={styles.nav_link}>
               Home
             </a>
           </li>
           <li>
-            <a href="/about" className="nav-link">
+            <a href="/about" className={styles.nav_link}>
               About Us
             </a>
           </li>
           <li>
-            <a href="/projects" className="nav-link">
+            <a href="/projects" className={styles.nav_link}>
               Projects
             </a>
           </li>
           <li>
-            <a href="/contact" className="nav-link">
+            <a href="/contact" className={styles.nav_link}>
               Services
             </a>
           </li>
           <li>
-            <a href="/contact" className="nav-link-contact">
+            <a href="/contact" className={styles.nav_link_contact}>
               Contact Us
             </a>
           </li>
