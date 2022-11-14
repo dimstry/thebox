@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/About";
 import Ads from "./components/Ads";
+import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Reasons from "./components/Reasons";
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <Stat />
       <Ads />
+      <Contact />
     </>
   );
 }
