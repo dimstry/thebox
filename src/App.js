@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Reasons from "./components/Reasons";
 import Services from "./components/Services";
 import Stat from "./components/Stat";
+import Bottom from "./components/Bottom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Stat />
       <Ads />
       <Contact />
+      <Bottom />
+      <Footer />
     </>
   );
 }

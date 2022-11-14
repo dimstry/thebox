@@ -1,0 +1,29 @@
+.footer {
+  height: 70px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  /* Primary */
+
+  background: #2947a9;
+  position: relative;
+}
+
+.footer_title {
+  position: absolute;
+  width: 356px;
+  left: 112px;
+  top: 26px;
+  bottom: 25px;
+
+  /* Caption */
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
